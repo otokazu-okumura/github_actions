@@ -69,3 +69,4 @@ jobs:
     #        sub-project/*.gradle*
     #        sub-project/**/gradle-wrapper.properties
       - run: ./gradlew build --no-daemon -i
+        working-directory: demo

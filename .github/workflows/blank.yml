@@ -21,7 +21,7 @@ jobs:
       - name: Check variables and secrets
         run: | 
           echo ${{vars.FOO}}
-          echo ${{sercrets.BAR}}
+          echo ${{secrets.BAR}}
 
   check-directory:
     runs-on: ubuntu-latest

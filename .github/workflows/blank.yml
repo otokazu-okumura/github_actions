@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: sum-id
-      - uses: otokazu-okumura/sum@main
+        uses: otokazu-okumura/sum@main
         with:
           x: 10
           y: 5

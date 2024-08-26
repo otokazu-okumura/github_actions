@@ -26,3 +26,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check directory
         run: ls -al
+
+  sum-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - id: sum-id
+      - uses: otokazu-okumura/sum@main
+        with:
+          x: 10
+          y: 5
+      - name: result
+        runs: | 
+          echo "sum result is ${{steps.sum-id.outputs.sum-result}}"

@@ -22,6 +22,6 @@ jobs:
   check-directory:
     runs-on: ubuntu-latest
     steps:
-      - users: actions/checkout@v4
+      - uses: actions/checkout@v4
       - name: Check directory
         runs: ls -al

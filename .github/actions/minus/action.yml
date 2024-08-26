@@ -1,5 +1,5 @@
-name: Sum
-description: Sum
+name: Minus
+description: Minus
 
 inputs:
   x:
@@ -10,14 +10,14 @@ inputs:
 
 # steps.<step_id>.outputs.<output_name>
 outputs:
-  sum-result:
-    value: ${{steps.sum.outputs.result}}
-    description: sum result
+  minus-result:
+    value: ${{steps.minus.outputs.result}}
+    description: minus result
 
 runs:
   using: "composite" # must composite
   steps:
-    - id: sum
+    - id: minus
       shell: bash
       run: echo "result=$((${{ inputs.x }} - ${{ inputs.y }}))" >> $GITHUB_OUTPUT
 

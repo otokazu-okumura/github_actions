@@ -64,9 +64,9 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'
-    #      cache: 'gradle'
-    #      cache-dependency-path: | # optional
-    #        sub-project/*.gradle*
-    #        sub-project/**/gradle-wrapper.properties
+          cache: 'gradle'
+          cache-dependency-path: | # optional
+            demo/*.gradle*
+            demo/**/gradle-wrapper.properties
       - run: ./gradlew build --no-daemon -i
         working-directory: demo

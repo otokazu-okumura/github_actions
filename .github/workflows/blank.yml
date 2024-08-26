@@ -18,6 +18,10 @@ jobs:
         run: mkdir temp
       - name: Create directory
         run: ls -al
+      - name: Check variables and secrets
+        run: | 
+          echo ${{vars.FOO}}
+          echo ${{sercrets.BAR}}
 
   check-directory:
     runs-on: ubuntu-latest

@@ -37,4 +37,5 @@ jobs:
           y: 5
       - name: result
         runs: | 
-          echo "sum result is ${{steps.sum-id.outputs.sum-result}}"
+          echo "sum result is ${{steps.sum-id.outputs.sum-result}"
+# foo
